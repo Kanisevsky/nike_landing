@@ -1,4 +1,4 @@
-
+ import Button from "@/components/Button"
 function Hero() {
   return (
     <section id="home" 
@@ -9,10 +9,11 @@ function Hero() {
         <h1>
          <span>The new Arrival</span>
          <br/>
-         <span>Nike</span>
+         <span>Nike </span>
          Shoes
         </h1>
         <p>Discover stylish Nike arrivals, quality and innovation for your active life </p>
+        <Button label="Show Now" iconUrl="/icons/arrow-right.svg"/>
       </div>
     </section>
   )
