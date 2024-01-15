@@ -10,16 +10,15 @@ function Hero() {
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The new Arrival</span>
          <br/>
-         <span className="text-coral-red inline-block mt-3">Nike </span>
-         Shoes
+         <span className="text-coral-red inline-block mt-3">Nike </span> Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish Nike arrivals, quality and innovation for your active life </p>
         <Button label="Show Now" iconUrl="/icons/arrow-right.svg"/>
         <div className="flex justify-start item-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div className="" key={stat.label}>
-              <p>{stat.value}</p>
-              <p>{stat.label}</p>
+              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+              <p className="leading-7 font-montserrat text-slate-gray">{stat.label}</p>
             </div>
           ))}
         </div>
