@@ -16,8 +16,8 @@ function Hero() {
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish Nike arrivals, quality and innovation for your active life </p>
         <Button label="Show Now" iconUrl="/icons/arrow-right.svg"/>
         <div className="flex justify-start item-start flex-wrap w-full mt-20 gap-16">
-          {statistics.map((stat,index) => (
-            <div className="">
+          {statistics.map((stat) => (
+            <div className="" key={stat.label}>
               <p>{stat.value}</p>
               <p>{stat.label}</p>
             </div>
