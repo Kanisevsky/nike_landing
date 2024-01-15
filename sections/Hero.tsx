@@ -1,5 +1,7 @@
  import Button from "@/components/Button"
- import { statistics } from "@/constants"
+import ShoeCard from "@/components/ShoeCard"
+ import { shoes, statistics } from "@/constants"
+ import Image from "next/image"
 function Hero() {
   return (
     <section id="home" 
@@ -19,6 +21,16 @@ function Hero() {
             <div className="" key={stat.label}>
               <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+        <Image src="/images/big-shoe1.png" alt="shoe" width={610} height={500} className="object contain relative z-10"/>
+        <div className="">
+          {shoes.map((shoe,i) => (
+            <div>
+              <ShoeCard imgUrl={""} changeBigShoeImage={() => {}} bigShoeImg=""/>
             </div>
           ))}
         </div>
